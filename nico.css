@@ -1,0 +1,199 @@
+/* estilos del cuerpo */
+body {
+    padding-left: 80px; /*espaciado a la izq*/
+    padding-right: 80px; /*Espaciado a la derecha*/
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center; /*centrar todos los objetos*/
+  }
+
+/*Estos son los estilos para el menu*/
+.nav {
+  background-color: #bbc1c7;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  padding: 0.75rem 1rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.hstack {
+  margin-left: 2rem; /* ajustar margen necesaria */
+}
+
+.form-control {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn {
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+/*Seccion  de marketing de productos inicio*/
+
+.product-marketing {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  padding: 5rem 0;
+}
+
+.product-marketing img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-marketing h2 {
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.product-marketing p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.product-marketing ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-marketing li {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.product-marketing li:hover {
+  background-color: #e0e0e0;
+}
+
+.btn {
+  background-color: #14293f; /* Azul pastel */
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 6px rgba(80, 83, 97, 0.801);
+}
+
+.btn:hover {
+  background-color: #752699;
+  color: #fff;
+}
+
+
+
+/*Seccion de la galeria de imagenes*/
+
+.product-gallery {
+  background-color: #f8f8f8; /* Fondo gris claro */
+  padding: 5rem 0;
+}
+
+.carousel-item {
+  height: 400px; /* Ajusta la altura según tus necesidades */
+}
+
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  bottom: 20px;
+  color: #333;
+}
+
+  /* esta es la seccion de los productos, aca se esditan los estilos de las tarjetas*/
+  .card {
+    transition: transform 0.2s; /*Animacion de tarjetas*/
+    border: none; /*E vitar que se vea el borde feo*/
+    box-shadow: 0 4px 6px rgba(80, 83, 97, 0.801); /*Sombrea de las tarjetas*/
+    transition: transform 0.2s;
+    margin: 20px;
+    
+  }
+
+  /*Tarjeta - cuerpo */
+  .card-body {
+
+    padding: 2rem; /*alinear las tarjetas al momento de reducir tamaño de pantalla*/
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /*movimiento superior de 10 px */
+  }
+
+  .card-img-top {
+    display: flex;
+    height: 300px; /* AJUSTAR ALTURA NECESARIA */
+    object-fit: cover; /*ajustar la imagen a la tarjeta*/
+  }
+  
+  /*Editar el titulo de la tarjeta*/
+
+  .card-title {
+    font-weight: bold;
+    text-align: center;
+
+  }
+  
+  /*Editar el texto de la tarjeta*/
+  .card-text { 
+    font-size: 0.9rem;
+    color: #706d6d;
+    text-align: center;
+  }
+  
+
+  /*boton de comprar*/
+  .btn-primary {
+    box-shadow: 0 4px 6px rgba(80, 83, 97, 0.801); /*Sombrea de las tarjetas*/
+    background-color: #14293f; /*Color del boton de compra*/
+    text-align: center;
+    border: none; /*Para que no se vea el borde de los botones*/
+    display: block; /*En esta parte se edita la posicion del boton*/
+    transition: background-color 0.2s ease-in-out; /*variable para la transision de color boton */
+  }
+  
+  .btn-primary:hover {
+    background-color: #752699; /*cambiar el color al pasar el mouse sobre el boton comprar*/
+  }
+  
+  /* estilos del pie de pagina */
+  footer {
+
+    margin-top: 3rem;
+    text-align: center;
+    padding: 5rem;
+    background-color: #f8f8f8;
+  }
